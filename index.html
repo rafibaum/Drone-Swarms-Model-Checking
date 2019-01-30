@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="generator" content="pdsite">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+                                <title>Model Checking Techniques for Drone Swarms | Autonomous Drones</title>
+        <style type="text/css">code{white-space: pre;}</style>
+                                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+                <link rel="stylesheet" href="/styles.css">
+                <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Autonomous Drones</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                                                                                    <li ><a href="./credits.html">Credits</a></li>
+                                                                                                                <li ><a href="./research.html">Research</a></li>
+                                                                        </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <div class="container">
+                        <div class="page-header"><h1>Model Checking Techniques for Drone Swarms</h1></div>
+                        <div class="row">
+                <div class="col-md-9">
+                    <h1 id="purpose">Purpose</h1>
+                    <p>Robotic systems of any nature show remarkable promise: their ability to go where humans cannot because of potential dangers, or mortal threats; and their capacity to achieve things not physically possible with human labor (such as in robotic-assisted surgery, or complicated landing sequences).<br />
+                    Moreover, the specialisation of swarm-robotics provides even greater potential. Swarm robotics uses more than one robot to accomplish tasks such as search and rescue, surveillance, and resource harvesting. Since many robots can be used, individual robots do not need exceptional capability, but instead the cumulative capability of the group can be used. This <em>scalability</em> permits easy upgrading as the task size increases, simply by purchasing more robots to integrate into the swarm. Additionally, with multiple agents, it is possible to build in resilience, such that a fault of individual drones does not prevent the task from being completed. By virtue of the scale involved, these will mostly involve autonomous systems - capable of organising themselves and completing tasks without any human input.<br />
+                    A significant requirement for almost all autonomous tasks is the ability for many robots to agree on things. In the basic case, this might be used to agree on the task to complete. More generally, this could be used to agree on the roles of the individual robots in the swarm, or even which task individual robots are assigned to if there are multiple tasks to be done.</p>
+                    <h1 id="background">Background</h1>
+                    <p>Many protocols and swarm designs attempt to satisfy these properties, however, it was not possible to verify this behaviour. The issue lies in the autonomy of the robots. Any potential failure of a robotic swarm would require immediate detection, given the potential for damage: both to property, and also to human life. Given the autonomy of the situation, however, it is likely that there would be a delay before the issue is detected. To avoid this situation entirely, multiple techniques have been developed in order to verify that the protocols developed cannot encounter this sort of situation. Previous work however has fixated upon swarms of a fixed size, and limited tolerance of faults.</p>
+                    <h1 id="innovation">Innovation</h1>
+                    <p>The developments studied in this research stem from generalising these proofs, such that any size of swarm can be used. This is achieved by parameterising the swarm size. This simply states that the proof will work for any specific swarm size. This permits the proof to reason about all swarm sizes without explicitly proving correctness for each individual swarm size.</p>
+                </div>
+                                <div class="col-md-3">
+                    <nav id="toc" data-spy="affix" data-offset-top="0">
+                        <h4><a href="#">Model Checking Techniques for Drone Swarms</a></h4>
+                        <ul>
+                        <li><a href="#purpose">Purpose</a></li>
+                        <li><a href="#background">Background</a></li>
+                        <li><a href="#innovation">Innovation</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </body>
+</html>
