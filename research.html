@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="generator" content="pdsite">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-                                <title>Research | Drone Swarms</title>
+                                <title>research | Drone Swarms</title>
         <style type="text/css">code{white-space: pre;}</style>
                                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
                 <link rel="stylesheet" href="./styles.css">
@@ -26,8 +26,8 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
+                        							<li ><a href="./applications.html">Applications</a></li>
                         							<li ><a href="./research.html">Research</a></li>
-                        							<li ><a href="./neural-network.html">Neural Network</a></li>
                         							<li ><a href="./logic.html">Logic</a></li>
                         							<li ><a href="./credits.html">Credits</a></li>
                                             </ul>
@@ -36,10 +36,28 @@
         </nav>
 
         <div class="container">
-                        <div class="page-header"><h1>Research</h1></div>
                         <div class="row">
                 <div class="col-md-9">
-                    
+                    <h1 id="probabilistic-swarm-systems">Probabilistic Swarm Systems</h1>
+                    <p>As part of the preliminary paper “Verifying Emergence of Bounded Time Properties in Probabilistic Swarm Systems”, new semantics for probabilistic swarms has been explored and brought to light.</p>
+                    <p>The parameterised semantics, in general, deals with the environment of the swarm as well as the individual agents. The environment’s state is changing depending on the actions performed by all the agents while each agent chooses their next actions based upon a probability distribution which is calculated based on the agent’s own current state.</p>
+                    <p>A more restricted version, in terms of the bounding of the amount of time steps, of PCTL or Probabilistic real time Computation Tree Logic, is presented. This version, which is expressed in a fragment of the PCTL, aims to be a form of formal identification of emergent properties. The restricted PCTL is utilized to create an algorithm to solve the emergent property identification problem (which determines whether the specification is an emergent property of the system or not) and the emergence threshold identification problem (which computes an emergence threshold for a given property of the system).</p>
+                    <p>Whether or not a global emergent behavior is exhibited in a swarm is the problem that is to be addressed. It is intended that a certain property will always be exhibited amongst the swarm for a number of agents above a threshold. This allows a swarm to be validated before deployment for an arbitrary number of agents – given that the global emergent behavior is to be checked amongst the agents. This will be achieved by the parameterised semantics described as above.</p>
+                    <p>By the semantics introduced and the restricted algorith utilising PCTL, an unbounded swarm can be reasoned about which is a step towards the verification of unbounded drone swarms.</p>
+                    <h1 id="synthesis-of-fault-tolerance-ratio">Synthesis of Fault Tolerance Ratio</h1>
+                    <p>The paper “Symbolic Synthesis of Fault-Tolerance Ratios in Parameterised Multi-Agent Systems” expands upon the verification of fault-tolerance properties of swarm systems.</p>
+                    <p>To combat the uncertainty of possible impacts malfunctions may cause, the robustness of a system must be verified. A procedure is introduced which attempts to compute the maximal ratio of possible faulty agents for the specification, expressed in temporal logic, to always be upheld for an arbitrarily sized system. More than that, this allows for the establishment of a correct system according the fault tolerance of a given protocol.</p>
+                    <p>Although the PIIS semantics and fault injection/tolerance concepts are similar, the new technique instead finds a maximal ratio of faulty agents, inside an error margin supplied, instead of a faulty to non-faulty ratio for a fixed population. As the number of agents are variable at any given point in time, a maximal ratio will be more relevant as it can be used to ensure the specification, in terms of the maximum number of faulty agents present, is always met no matter the size of the population.</p>
+                    <p>The technique presented, adapted from CTL, symbolically derives the fault tolerance ratio (maximal ratio described above) and is incorporated with a general model checking algorithm to create a single procedure to determine the robustness of a multi-agent with varying population system altogether.</p>
+                </div>
+                                <div class="col-md-3">
+                    <nav id="toc" data-spy="affix" data-offset-top="0">
+                        
+                        <ul>
+                        <li><a href="#probabilistic-swarm-systems">Probabilistic Swarm Systems</a></li>
+                        <li><a href="#synthesis-of-fault-tolerance-ratio">Synthesis of Fault Tolerance Ratio</a></li>
+                        </ul>
+                    </nav>
                 </div>
                             </div>
         </div>
