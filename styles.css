@@ -18,3 +18,7 @@ body {
 .rounded {
 	border-radius: 50%;
 }
+
+.full {
+	width: 100%;
+}
