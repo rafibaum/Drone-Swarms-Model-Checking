@@ -4,12 +4,10 @@ html {
 }
 
 body {
-    margin-bottom: 80px;
-
+	margin-bottom: 3em;
 }
 
 .navbar-static-bottom {
-    position:absolute;
     bottom: 0;
     width: 100%;
     margin-bottom: 0;
